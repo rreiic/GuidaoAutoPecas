@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <title>Guidão Auto Peças</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" href="assets/css/fontawesome.css">
+    <link rel="stylesheet" href="assets/css/templatemo-cyborg-gaming.css">
+    <link rel="stylesheet" href="assets/css/owl.css">
+    <link rel="stylesheet" href="assets/css/animate.css">
+    <link rel="stylesheet"href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+<!--
+
+TemplateMo 579 Cyborg Gaming
+
+https://templatemo.com/tm-579-cyborg-gaming
+
+-->
+  </head>
+
+<body>
+
+  <!-- ***** Preloader Start ***** -->
+  <div id="js-preloader" class="js-preloader">
+    <div class="preloader-inner">
+      <span class="dot"></span>
+      <div class="dots">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </div>
+  <!-- ***** Preloader End ***** -->
+
+  <!-- ***** Header Area Start ***** -->
+  <header class="header-area header-sticky">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <nav class="main-nav">
+                    <!-- ***** Logo Start ***** -->
+                    <a href="index.html" class="logo">
+                        <img src="assets/images/guidao.png" alt="">
+                    </a>
+                    <!-- ***** Logo End ***** -->
+                    <!-- ***** Search End ***** -->
+                    <!-- ***** Search End ***** -->
+                    <!-- ***** Menu Start ***** -->
+                    <ul class="nav">
+                        <li><a href="index.html">Início</a></li>
+                        <li><a href="browse.html" class="active">Contato</a></li>
+                    </ul>   
+                    <a class='menu-trigger'>
+                        <span>Menu</span>
+                    </a>
+                    <!-- ***** Menu End ***** -->
+                </nav>
+            </div>
+        </div>
+    </div>
+  </header>
+  <!-- ***** Header Area End ***** -->
+
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="page-content">
+
+          <div class="container mt-4">
+  <form>
+    <div class="mb-3">
+      <label for="nome" class="form-label text-white">Nome</label>
+      <input type="text" class="form-control" id="nome" name="nome" placeholder="Digite seu nome" required>
+    </div>
+    
+    <div class="mb-3">
+      <label for="email" class="form-label text-white">Email</label>
+      <input type="email" class="form-control" id="email" name="email" placeholder="Digite seu email" required>
+    </div>
+    
+    <div class="mb-3">
+      <label for="assunto" class="form-label text-white">Assunto</label>
+      <input type="text" class="form-control" id="assunto" name="assunto" placeholder="Assunto" required>
+    </div>
+    
+    <div class="mb-3">
+      <label for="mensagem" class="form-label text-white">Mensagem</label>
+      <textarea class="form-control" id="mensagem" name="mensagem" rows="4" placeholder="Sua Mensagem"></textarea>
+    </div>
+    
+    <button type="submit" class="btn btn-primary">Enviar</button>
+  </form>
+</div>
+
+      
+        </div>
+      </div>
+    </div>
+    
+
+  </div>
+
+
+         
+          
+
+  
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <p>Copyright © 2025 <a href="#">Guidão Peças</a> Company. All rights reserved.</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+  <!-- Scripts -->
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+
+  <script src="assets/js/isotope.min.js"></script>
+  <script src="assets/js/owl-carousel.js"></script>
+  <script src="assets/js/tabs.js"></script>
+  <script src="assets/js/popup.js"></script>
+  <script src="assets/js/custom.js"></script>
+
+  <script>
+  const form = document.getElementById('meuFormulario');
+
+  form.addEventListener('submit', function (event) {
+    event.preventDefault(); // impede envio padrão
+
+    // Remove classes de erro
+    const campos = form.querySelectorAll('input, textarea');
+    let valido = true;
+
+    campos.forEach(campo => {
+      campo.classList.remove('is-invalid');
+
+      if (!campo.checkValidity()) {
+        campo.classList.add('is-invalid');
+        valido = false;
+      }
+    });
+
+    if (valido) {
+      alert("Formulário enviado com sucesso!");
+      // Aqui você pode enviar o formulário com fetch/AJAX ou permitir o envio:
+      // form.submit();
+    }
+  });
+</script>
+
+
+  </body>
+
+</html>
